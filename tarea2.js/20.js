@@ -1,15 +1,4 @@
-//5. Promedio de números pares e impares
-//Descripción:
-//Dada una lista de números, calcular el promedio de los pares y de los impares.
-//Entrada:
-//numeros = [2, 5, 8, 9, 4, 7]
-//Proceso:
-//Recorrer el arreglo con un ciclo for.
-//Sumar y contar pares e impares por separado.
-//Calcular los promedios respectivos.
-//Salida esperada:
-//Promedio de pares: 4.67  
-//Promedio de impares: 7.00
+
 function promedioParesEImpares(){
     let n=0, i=0, numeros=[], spares=0, simpares=0, cpares=0, cimpares=0
     n=parseInt(prompt("Ingrese la cantidad de números a evaluar:"))
