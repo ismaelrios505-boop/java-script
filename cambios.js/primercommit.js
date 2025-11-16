@@ -1,1 +1,1 @@
-console("primer commit")
+console("primer committ")
