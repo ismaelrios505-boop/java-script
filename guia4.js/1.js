@@ -1,5 +1,4 @@
-function contarpalabras() {
-let frase = prompt("Ingrese una frase:");
+function contarpalabras(frase) {
 let contador = 0;
 frase = frase.trim();
 if (frase.length > 0) {
@@ -9,6 +8,9 @@ for (let i = 0; i < frase.length; i++) {
   contador++;
 }  
 }
-console.log(`numero de palabras: ${contador}`);
 }
+return contador
 }
+let frase = prompt("Ingrese una frase:");
+let total= contarpalabras(frase)
+console.log(`Número de palabras: ${total}`)
