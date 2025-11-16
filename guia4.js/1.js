@@ -11,6 +11,6 @@ for (let i = 0; i < frase.length; i++) {
 }
 return contador
 }
-let frase = prompt("Ingrese una frase:");
+let frase = prompt("Ingrese una frase-:");
 let total= contarpalabras(frase)
 console.log(`Número de palabras: ${total}`)
