@@ -1,1 +1,1 @@
-let mensaje= "cambio hecho en main";
+let mensaje="mensaje final despues del conflicto";
