@@ -15,7 +15,6 @@ function contarpalabras() {
   return "Número de palabras: " + contador;
 }
 
-
 // 2. Contar signos
 function contarsignnos() {
   let frase = "Hola, ¿como estas?"
@@ -29,7 +28,6 @@ function contarsignnos() {
 
   return "Signos encontrados: " + cont;
 }
-
 
 // 3. Contar vocales
 function contarvocales() {
@@ -45,7 +43,6 @@ function contarvocales() {
 
   return "Vocales encontradas: " + cont;
 }
-
 
 // 4. Contar consonantes
 function contarconsonantes() {
@@ -63,7 +60,6 @@ function contarconsonantes() {
   return "Consonantes encontradas: " + cont;
 }
 
-
 // 5. Contar dígitos
 function contardigitos() {
   let frase = "mi clave es 1234 "
@@ -77,7 +73,6 @@ function contardigitos() {
 
   return "Dígitos encontrados: " + cont;
 }
-
 
 // 6. Mayúsculas
 function contarmayusculas() {
@@ -93,7 +88,6 @@ function contarmayusculas() {
   return "Mayúsculas encontradas: " + cont;
 }
 
-
 // 7. Contar párrafos
 function contarparrafos() {
   let frase = "hola mundo"
@@ -105,7 +99,6 @@ function contarparrafos() {
 
   return "Párrafos: " + cont;
 }
-
 
 // 8. Invertir frase
 function invertirFrase() {
@@ -119,13 +112,11 @@ function invertirFrase() {
   return "Frase invertida: " + invertida;
 }
 
-
-// 9. Contar caracteres (incluye espacios)
+// 9. Contar caracteres
 function contarcaracteres1() {
   let frase = "hola 1231"
   return "Caracteres totales: " + frase.length;
 }
-
 
 // 10. Contar minúsculas
 function contarminusculas() {
@@ -138,7 +129,6 @@ function contarminusculas() {
   return "Minúsculas encontradas: " + cont;
 }
 
-
 // 11. Buscar palabra exacta
 function buscarpalabra() {
     let frase = "me gusta programar en JavaScript"
@@ -149,17 +139,13 @@ function buscarpalabra() {
 
     for (let i = 0; i <= frase.length; i++) {
 
-        // Si encontramos espacio o final de frase, analizamos la palabra encontrada
         if (i === frase.length || frase[i] === " ") {
-
             if (palabraTemp === palabra) {
                 encontrado = true;
                 break;
             }
-
-            palabraTemp = ""; // resetear
+            palabraTemp = "";
         } else {
-            // agregar letra a palabra temporal
             palabraTemp += frase[i];
         }
     }
@@ -171,9 +157,7 @@ function buscarpalabra() {
     }
 }
 
-
-
-// 12. Contar caracteres sin espacios
+// 12. Contar un carácter
 function contarCaracter() {
     let frase = "Hola mundo"
     let caracter = "o"
@@ -188,8 +172,7 @@ function contarCaracter() {
     return `El carácter '${caracter}' aparece ${contador} veces.`;
 }
 
-
-// 13. Caracteres en posición par
+// 13. Posición par
 function contarcaracterposicionpar() {
   let frase = "hola"
   let cont = 0;
@@ -201,8 +184,7 @@ function contarcaracterposicionpar() {
   return "Caracteres en posición par: " + cont;
 }
 
-
-// 14. Caracteres en posición impar
+// 14. Posición impar
 function contarcaracterposicionimpar() {
   let frase = "hola"
   let cont = 0;
@@ -214,8 +196,7 @@ function contarcaracterposicionimpar() {
   return "Caracteres en posición impar: " + cont;
 }
 
-
-// 15. Añadir texto al inicio y al final
+// 15. Añadir texto
 function anadirTextos() {
     let frase = "Aprender programacion"
     let textoAdicional = "Hoy"
@@ -226,11 +207,9 @@ function anadirTextos() {
     return `Al inicio: "${inicio}"\nAl final: "${fin}"`;
 }
 
-
 // ------------------------------
 //  FOR PARA EJECUTARLOS TODOS
 // ------------------------------
-
 function mostrarTodo() {
     let lista = [
       contarpalabras,
