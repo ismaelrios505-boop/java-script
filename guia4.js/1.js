@@ -10,5 +10,5 @@ for (let i = 0; i < frase.length; i++) {
 }  
 }
 }
-console.log(`Número de palabras: ${contador}`)
+console.log(`Número de palabras de la frase: ${contador}`)
 }
