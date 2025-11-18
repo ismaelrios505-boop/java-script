@@ -54,14 +54,17 @@ function contarconsonantes(frase) {
 
 // 5. Dígitos
 function contardigitos(frase) {
-  if (!frase) frase = "mi clave es 1234";
-  let cont = 0;
+  let frase = "mi clave es 1234";   
+    let cont = 0;
 
-  for (let i = 0; i < frase.length; i++) {
-    if (!isNaN(frase[i]) && frase[i] !== " ") cont++;
-  }
+    let numeros = "0123456789";      
+    for (let i = 0; i < frase.length; i++) {
+        if (numeros.includes(frase[i])) {
+            cont++;
+        }
+    }
 
-  return "Dígitos encontrados: " + cont;
+    return "Dígitos encontrados: " + cont;
 }
 
 // 6. Mayúsculas

@@ -74,6 +74,7 @@ function contardigitos() {
 
     return "Dígitos encontrados: " + cont;
 }
+
 // 6. Mayúsculas
 function contarmayusculas() {
   let frase = "Hola mundo Bonito"
