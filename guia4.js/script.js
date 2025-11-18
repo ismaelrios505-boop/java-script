@@ -54,10 +54,11 @@ function contarconsonantes(frase) {
 
 // 5. Dígitos
 function contardigitos(frase) {
-  let frase = "mi clave es 1234";   
-    let cont = 0;
+    if (!frase) frase = "mi clave es 1234";
 
-    let numeros = "0123456789";      
+    let cont = 0;
+    const numeros = "0123456789";  // aquí están todos los dígitos válidos
+
     for (let i = 0; i < frase.length; i++) {
         if (numeros.includes(frase[i])) {
             cont++;
@@ -66,6 +67,8 @@ function contardigitos(frase) {
 
     return "Dígitos encontrados: " + cont;
 }
+
+
 
 // 6. Mayúsculas
 function contarmayusculas(frase) {
